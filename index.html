@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolución Box</title>
+    <link rel="icon" href="icons/icono.png" type="image/png">
+    <link rel="apple-touch-icon" href="icons/icono.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+ <nav class="navbar">
+    <div class="container">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="icons/icono.png" alt="Revolución Box" class="logo-img" loading="lazy">
+                <span class="logo-text">Revolución Box</span>
+            </div>
+            
+            <!-- Botón hamburguesa (MÓVIL) -->
+            <button class="nav-toggle" aria-label="Abrir menú" onclick="toggleNav()">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Links de navegación -->
+            <div class="nav-links">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#precios" class="nav-link">Precios</a>
+                <a href="sobre-nosotros.html" class="nav-link nav-link-page">Sobre nosotros</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-icon">
+                    <img src="icons/icono.png" alt="Revolución Box" class="hero-icon-img" loading="lazy">
+                </div>
+                
+                <h1 class="hero-title">
+                    REVOLUCIÓN <span class="hero-accent">BOX</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Transforma tu cuerpo, fortalece tu mente
+                </p>
+                <p class="hero-description">
+                    El único fracaso es no intentarlo. Únete a nuestra comunidad y descubre tu mejor versión.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary hero-btn">
+                        Comienza Tu Entrenamiento
+                    </button>
+                    <button class="btn-secondary hero-btn" onclick="scrollToSection('servicios')">
+                        Conoce Más
+                    </button>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <button onclick="scrollToSection('servicios')" class="scroll-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section id="servicios" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-description">
+                    Ofrecemos una variedad de servicios para ayudarte a alcanzar tus objetivos fitness
+                </p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3 class="service-title">Equipamiento de primer nivel</h3>
+                        <p class="service-description">Contamos con instalaciones, entrenadores y equipamiento de primer nivel para que puedas empezar a entrenar.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="service-title">Acompañamieto profesional</h3>
+                        <p class="service-description">Nuestros profesores expertos en el ámbito te acompañaran en tu entrenamiento.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="service-title">Seguimiento Avanzado</h3>
+                        <p class="service-description">Monitoreo constante de tu progreso con tecnología de punta para alcanzar tus metas más rápido.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Precios -->
+        <section id="precios" class="pricing-section">
+            <div class="container">
+                <h2 class="section-title">Planes y Precios</h2>
+                <p class="section-description">
+                    Elige el plan que mejor se adapte a tus necesidades y comienza tu transformación
+                </p>
+                
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <h3 class="price-title">2 veces por semana</h3>
+                        <p class="price-amount">$31.000<span class="price-period">/mes</span></p>
+                        <ul class="price-features">
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> Acceso a instalaciones
+                            </li>
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> 2 sesiones semanales
+                            </li>
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> Evaluación inicial
+                            </li>
+                        </ul>
+                           <a 
+                               href="https://wa.me/5492615919002?text=Hola!%20Estoy%20interesado%20en%20el%20plan%20de%202%20dias%20por%20semana"
+                                class="btn-primary price-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                             >
+                            Elegir Plan
+                             </a>   
+                    </div>
+                    
+                    <div class="price-card featured">
+                        <div class="featured-badge">POPULAR</div>
+                        <h3 class="price-title">3 veces por semana</h3>
+                        <p class="price-amount">$36.000<span class="price-period">/mes</span></p>
+                        <ul class="price-features">
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> Acceso a instalaciones
+                            </li>
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> 3 sesiones semanales
+                            </li>
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> Evaluación inicial
+                            </li>
+                 
+                        </ul>
+                            <a 
+                               href="https://wa.me/5492615919002?text=Hola!%20Estoy%20interesado%20en%20el%20plan%20de%203%20dias%20por%20semana"
+                                class="btn-primary price-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                             >
+                            Elegir Plan
+                             </a>   
+                    </div>
+                    
+                    <div class="price-card">
+                        <h3 class="price-title">5 veces por semana</h3>
+                        <p class="price-amount">$41.000<span class="price-period">/mes</span></p>
+                        <ul class="price-features">
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> Acceso ilimitado
+                            </li>
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> 5 sesiones semanales
+                            </li>
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> Evaluación completa
+                            </li>
+                           
+                           
+                        </ul>
+                           <a 
+                               href="https://wa.me/5492615919002?text=Hola!%20Estoy%20interesado%20en%20el%20plan%20de%205%20dias%20por%20semana"
+                                class="btn-primary price-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                             >
+                            Elegir Plan
+                             </a>   
+                    </div>
+                     <div class="price-card">
+                        <h3 class="price-title">Taekwondo para niños</h3>
+                        <p class="price-amount">$15.000<span class="price-period">/mes</span></p>
+                        <ul class="price-features">
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> Años de 6 a 13
+                            </li>
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> Se les enseña disciplina, respeto y defensa personal
+                            </li>
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> Martes y jueves de 19 a 20 horas
+                            </li>
+                           
+                           
+                        </ul>
+                           <a 
+                               href="https://wa.me/5492615919002?text=Hola!%20Estoy%20interesado%20en%20inscribir%20a%20mi%20hijo%20en%20taekwondo"
+                                class="btn-primary price-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                             >
+                            Elegir Plan
+                             </a>   
+                    </div>
+                    <div class="price-card">
+                        <h3 class="price-title">Personal trainer</h3>
+                        <p class="price-amount">Consultar<span class="price-period"></span></p>
+                        <ul class="price-features">
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> Educación en hábitos saludables: sueño, nutrición y estilo de vida activo.
+                            </li>
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> Planes de entrenamiento personalizados según tus objetivos, nivel y tiempo disponible.
+                            </li>
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> Seguimiento de progresos con métricas claras y ajustes estratégicos en cada etapa.
+                            </li>
+                           
+                           
+                        </ul>
+                           <a 
+                               href="https://wa.me/5492615919002?text=Hola!%20estoy%20interesado%20en%20el%20servicio%20de%20personal%20trainer"
+                                class="btn-primary price-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                             >
+                            Elegir servicio
+                             </a>   
+                    </div>
+
+                     <div class="price-card">
+                        <h3 class="price-title">Nutricionista</h3>
+                        <p class="price-amount">$15.000<span class="price-period">/consulta</span></p>
+                        <ul class="price-features">
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> Planes de alimentación personalizados según tus objetivos y necesidades.
+                            </li>
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> Evaluación nutricional mediante fraccionamiento antropometrico y escaneo corporal con balanza de bioimpedancia.
+                            </li>
+                            <li class="price-feature">
+                                <i class="fas fa-check"></i> Identificación de objetivos (bajar grasa, aumentar masa muscular, rendimiento)
+                            </li>
+                           
+                           
+                        </ul>
+                           <a 
+                               href="https://wa.me/5492615919002?text=Hola!%20Estoy%20interesado%20en%20agendar%20una%20consulta" 
+                                class="btn-primary price-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                             >
+                            Elegir servicio
+                             </a>   
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+         <!-- CTA Sobre Nosotros -->
+            <section class="about-cta-section">
+                <div class="container">
+                 <div class="about-cta-card">
+                     <h3 class="about-cta-title">¿Querés saber más sobre nosotros?</h3>
+                    <p class="about-cta-text">
+                         Conocé nuestra historia, valores y a los profesionales que forman Revolución Box.
+                    </p>
+
+              <a href="sobre-nosotros.html" class="btn-primary about-cta-btn">
+                Conocé Más
+             </a>
+                </div>
+              </div>
+            </section> 
+
+        <!-- Galería -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Nuestras Instalaciones</h2>
+                <p class="section-description">
+                    Conoce nuestro espacio de entrenamiento equipado con tecnología de punta
+                </p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Área de entrenamiento" class="gallery-img" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                             alt="Clase de boxeo" class="gallery-img" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80" 
+                             alt="Zona de pesas" class="gallery-img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-title">Contáctanos</h2>
+                    <p class="section-description">
+                        Estamos aquí para responder todas tus preguntas y ayudarte a comenzar tu viaje fitness
+                    </p>
+                    
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <h3 class="contact-subtitle">Ponte en contacto</h3>
+                            <div class="contact-items">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4 class="contact-label">Número de teléfono</h4>
+                                        <p class="contact-value">+54 9 2615 91-9002</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4 class="contact-label">Email</h4>
+                                        <p class="contact-value">revolucionbox2024@gmail.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4 class="contact-label">Horarios</h4>
+                                        <p class="contact-value">Lun-Vie: 7AM - 11AM : 15PM - 22PM</p>
+                                        <p class="contact-value">Sábado: 8AM - 12AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="location-info">
+                            <h3 class="contact-subtitle">Ubicación</h3>
+                            <div class="contact-item address-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-label">Dirección</h4>
+                                    <p class="contact-value">Severo del Castillo 3968</p>
+                                    <p class="contact-value">Los Corralitos, Guaymallén</p>
+                                </div>
+                            </div>
+                            <div class="map-container">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.669332940322!2d-68.70389312347514!3d-32.90690986988422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e135f8b4fbb15%3A0x7d8d15c5595c3623!2sRevoluci%C3%B3n%20Funcional!5e0!3m2!1ses!2sar!4v1761053191826!5m2!1ses!2sar" 
+                                    width="100%" 
+                                    height="100%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">Revolución Box</h3>
+                    <p class="footer-description">Transforma tu cuerpo y mente en nuestras instalaciones de primer nivel.</p>
+                    <div class="social-links">
+                       <a 
+                         href="https://www.instagram.com/revolucion.box" 
+                         class="social-link" 
+                         target="_blank" 
+                             rel="noopener noreferrer"
+                        >   
+    <i class="fab fa-instagram"></i>
+</a>
+
+                        
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-subtitle">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio" class="footer-link">Inicio</a></li>
+                        <li><a href="#servicios" class="footer-link">Servicios</a></li>
+                        <li><a href="#precios" class="footer-link">Precios</a></li>
+                        <li><a href="#contacto" class="footer-link">Contacto</a></li>
+                        <li><a href="sobre-nosotros.html" class="footer-link">Sobre Nosotros</a></li>
+                    </ul>
+                </div>
+                
+                
+               
+            </div>
+            
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
