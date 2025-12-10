@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nosotros</title>
+    <link rel="icon" href="icons/icono.png" type="image/png">
+    <link rel="apple-touch-icon" href="icons/icono.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar (misma que en index, pero con enlaces a páginas) -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="icons/icono.png" alt="Revolución Box" class="logo-img" loading="lazy">
+                    <span class="logo-text">Revolución Box</span>
+                </div>
+                
+                <button class="nav-toggle" aria-label="Abrir menú" onclick="toggleNav()">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="nav-links">
+                    <a href="index.html#inicio" class="nav-link">Inicio</a>
+                    <a href="index.html#servicios" class="nav-link">Servicios</a>
+                    <a href="index.html#precios" class="nav-link">Precios</a>
+                    <a href="sobre-nosotros.html" class="nav-link active">Sobre nosotros</a>
+                    <a href="index.html#contacto" class="nav-link">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero/encabezado simple -->
+        <section class="about-section">
+            <div class="container">
+                <h2 class="section-title">Sobre nosotros</h2>
+                <p class="section-description">
+                    Revolución Box es un espacio creado por entrenadores apasionados, dedicado a transformar
+                    la vida de las personas a través del movimiento, el entrenamiento consciente y la comunidad.
+                </p>
+
+                <div class="about-grid">
+                    <!-- Dueño 1 -->
+                    <div class="about-card">
+                        <div class="about-photo">
+                            <img src="assets/fotogabi.png" alt="Nombre dueño 1">
+                        </div>
+                        <h3 class="about-name">Profesor Gabi Vargas</h3>
+                        <p class="about-role">Co-fundador · Entrenador/Profesor de Educación física</p>
+                        <p class="about-bio">
+                            Entrenador con mas de 10 años de experiencia en preparación física y entrenamiento funcional.
+                            Su enfoque está en que cada alumno mejore su fuerza, postura y confianza, paso a paso.
+                        </p>
+                    </div>
+
+                    <!-- Dueño 2 -->
+                    <div class="about-card">
+                        <div class="about-photo">
+                            <img src="assets/fotoguille.png" alt="Nombre dueño 2">
+                        </div>
+                        <h3 class="about-name">Profesor Guille Araya</h3>
+                        <p class="about-role">Co-fundador · Entrenador/Profesor de Educación física</p>
+                        <p class="about-bio">
+                            Especializado en trabajo técnico, corrección de movimientos y entrenamiento personalizado.
+                            Cree en el progreso real, sin atajos, adaptando cada clase al nivel de cada persona.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- CTA Redes Sociales -->
+<section class="social-cta-section">
+    <div class="container">
+
+        <h2 class="social-cta-title">¡Seguinos y sé parte de la comunidad!</h2>
+        <p class="social-cta-text highlighted-text">            
+            Unite a nuestro grupo exclusivo de WhatsApp y seguinos en Instagram para ver rutinas,
+            novedades y promociones.
+        </p>
+
+        <div class="social-cta-buttons">
+            <a 
+                href="https://chat.whatsapp.com/#######" 
+                target="_blank"
+                class="btn-primary social-btn whatsapp-btn"
+            >
+                <i class="fab fa-whatsapp"></i> ¡Unite a nuestro grupo!
+            </a>
+
+            <a 
+                href="https://instagram.com/revolucion.box" 
+                target="_blank"
+                class="btn-secondary social-btn instagram-btn"
+            >
+                <i class="fab fa-instagram"></i> Seguinos en Instagram
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Puedes reutilizar tu footer -->
+      <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">Revolución Box</h3>
+                    <p class="footer-description">Transforma tu cuerpo y mente en nuestras instalaciones de primer nivel.</p>
+                    <div class="social-links">
+                       <a 
+                         href="https://www.instagram.com/revolucion.box" 
+                         class="social-link" 
+                         target="_blank" 
+                             rel="noopener noreferrer"
+                        >   
+    <i class="fab fa-instagram"></i>
+</a>
+
+                        
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-subtitle">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio" class="footer-link">Inicio</a></li>
+                        <li><a href="#servicios" class="footer-link">Servicios</a></li>
+                        <li><a href="#precios" class="footer-link">Precios</a></li>
+                        <li><a href="#contacto" class="footer-link">Contacto</a></li>
+                        <li><a href="sobre-nosotros.html" class="footer-link">Sobre Nosotros</a></li>
+                    </ul>
+                </div>
+                
+                
+               
+            </div>
+            
+            
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
